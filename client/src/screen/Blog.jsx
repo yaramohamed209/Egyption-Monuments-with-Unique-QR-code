@@ -1,7 +1,7 @@
 import React from "react";
 const Blog = () => {
   return (<>
-  <h1>Travel Blog</h1>
+  <h1>Egyption Monuments with Unique QR code</h1>
   </>);
 };
 

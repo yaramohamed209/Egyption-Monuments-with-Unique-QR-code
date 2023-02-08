@@ -5,10 +5,9 @@ const Navigation = () => {
   return (
     <div className="navigation" id="topnav">
       <a href="#home">Home</a>
-      <a href="#destinations">Destinations</a>
-      <a href="#Ways">Travel Ways</a>
-      <a href="#travel">Travel Safetys</a>
-      <a href="#about">About Us</a>
+      <a href="#destinations">Monuments </a>
+      <a href="#Ways">museum</a>
+  
     </div>
   );
 };

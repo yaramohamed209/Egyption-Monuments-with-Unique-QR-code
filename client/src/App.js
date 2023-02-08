@@ -8,12 +8,13 @@ import Destination from "./screen/Destination";
 
 function App() {
     return ( <div className = "App" >
-        <Navigation / >
-        <Secondnav / >
-        <Blog / >
-        <Destination / >
-        <Foot / >
-        <div > </div> </div>
+        <Navigation/>
+        <Secondnav/>
+        <Blog />
+        <Destination />
+        <Foot />
+
+        </div>
     );
 }
 

@@ -218,8 +218,7 @@ const Destin = () => {
       </p>
       <div className="preven">
         <p>
-        This is an example page for travel blogs and other travel-related topics. This is a partially developed front-end example produced by developer Tushar Kumar.
-        Apart from that all the Ui/Ux design is also created by Tushar kumar using Figma.
+       
         </p>
       </div>
     </>
