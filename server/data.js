@@ -1,7 +1,6 @@
 
 export const Monuments  = [
   {
-   
     firstName: "test",
     lastName: "me",
     email: "aaaaaaa@gmail.com",
