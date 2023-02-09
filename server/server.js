@@ -1,11 +1,11 @@
 import express from 'express';
-import { Monuments } from './data.js';
+import data from './data.js';
 
 
 const app = express();
 //
 app.get('/api/Monuments', (req, res) => {
-    res.send(Monuments);
+    res.send(data.Monuments);
   });
   
   const port = process.env.PORT || 5000; 

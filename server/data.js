@@ -1,21 +1,75 @@
 
-export const Monuments  = [
-  {
-    firstName: "test",
-    lastName: "me",
-    email: "aaaaaaa@gmail.com",
-    password: "$2b$10$dsasdgsagasda//G9JxQ4bQ8KXf4OAIe/X/AK9skyWUy",
-    picturePath: "p11.jpeg",
-    friends: [],
-    location: "San Fran, CA",
-    occupation: "Software Engineer",
-    viewedProfile: 14561,
-    impressions: 888822,
-    createdAt: 1115211422,
-    updatedAt: 1115211422,
-    __v: 0,
-  }
-];
 
-
-export default {Monuments};
+const data = 
+{
+ Monuments :
+ [
+   {
+     // _id: '1',
+     name: 'Monuments',
+     slug: 'Monuments1',
+     category: 'Shirts',
+     image: './components/images/p2.jpeg', // 679px × 829px
+     price: 120,
+     countInStock: 10,
+     brand: 'Nike',
+     rating: 4.5,
+     numReviews: 10,
+     description: 'high quality shirt',
+   },
+   {
+     // _id: '1',
+     name: 'Monuments',
+     slug: 'Monuments1',
+     category: 'Shirts',
+     image: './components/images/p2.jpeg', // 679px × 829px
+     price: 120,
+     countInStock: 10,
+     brand: 'Nike',
+     rating: 4.5,
+     numReviews: 10,
+     description: 'high quality shirt',
+   },
+   {
+     // _id: '1',
+     name: 'Monuments',
+     slug: 'Monuments1',
+     category: 'Shirts',
+     image: './components/images/p2.jpeg', // 679px × 829px
+     price: 120,
+     countInStock: 10,
+     brand: 'Nike',
+     rating: 4.5,
+     numReviews: 10,
+     description: 'high quality shirt',
+   },
+   {
+     // _id: '1',
+     name: 'Monuments',
+     slug: 'Monuments1',
+     category: 'Shirts',
+     image: './components/images/p2.jpeg', // 679px × 829px
+     price: 120,
+     countInStock: 10,
+     brand: 'Nike',
+     rating: 4.5,
+     numReviews: 10,
+     description: 'high quality shirt',
+   },
+   {
+     // _id: '1',
+     name: 'Monuments',
+     slug: 'Monuments1',
+     category: 'Shirts',
+     image: './components/images/p2.jpeg', // 679px × 829px
+     price: 120,
+     countInStock: 10,
+     brand: 'Nike',
+     rating: 4.5,
+     numReviews: 10,
+     description: 'high quality shirt',
+   }
+   
+ ]
+}
+export default data; 
