@@ -1,29 +1,28 @@
-import data from "./data";
+import data from "./data"; 
+import {BrowserRouter ,Routes ,Route  } from 'react-router-dom' 
+import HomeScreen from './screens/HomeScreen'
+
 
 
 function App() {
   return (
+    <BrowserRouter>
+    
     <div>
-      <header>
-      <a href="/"> Egyptian Monuments With Unique QR Code
-      </a>
+      <header> 
+        <center><strong>Egyptian Monuments With Unique QR Code</strong></center>
+       
+      
       </header>
       
       <main> 
-       <h1>Featured Monuments</h1>
-       <div className="monuments">
-         {data.monuments.map((monuments) =>(
-        <div key={monuments.slug}>
-          <img src={monuments.image} alt={monuments.name}/>
-
-          <p> {monuments.name}</p>
-          <p>{monuments.description}</p>
-        </div>
-        ))
-         }
-       </div>
+        <Routes> 
+          <Route path = "/" element={<HomeScreen />}/>
+          <Route path = "/monuments/:slag" element={<monumentsScreen />}/>
+        </Routes>
       </main>
     </div>
+    </BrowserRouter>
   );
 }
 
