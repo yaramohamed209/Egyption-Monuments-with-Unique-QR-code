@@ -7,21 +7,17 @@ import HomeScreen from './screens/HomeScreen'
 function App() {
   return (
     <BrowserRouter>
-    
-    <div>
-      <header> 
-        <center><strong>Egyptian Monuments With Unique QR Code</strong></center>
-       
-      
-      </header>
-      
-      <main> 
-        <Routes> 
-          <Route path = "/" element={<HomeScreen />}/>
-          <Route path = "/monuments/:slag" element={<monumentsScreen />}/>
-        </Routes>
-      </main>
-    </div>
+      <div>
+        <header> 
+           <center><strong>Egyptian Monuments With Unique QR Code</strong></center>
+        </header> 
+        <main> 
+          <Routes> 
+            <Route path = "/" element={<HomeScreen />}/>
+            <Route path = "/monuments/:slag" element={<monumentsScreen />}/>
+          </Routes>
+        </main>
+      </div>
     </BrowserRouter>
   );
 }

@@ -1,6 +1,3 @@
-DONE 
-yara 
-mariam 
-haidy 
-mayada
-shrouk 
+Egyption Monuments with Unique QR code.
+
+
