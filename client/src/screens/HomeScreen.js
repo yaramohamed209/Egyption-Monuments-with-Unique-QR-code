@@ -1,14 +1,13 @@
 import data from "../data.js";
 function HomeScreen ()
-{
+{ 
+    //here data for main page 
     return (
-        <div>
-        <center>
-       <h1>EGYPTIAN Civilization</h1> 
+    <div>
+       <center>
+         <h1>EGYPTIAN Civilization</h1> 
        </center> 
-     
-       <img src="./images/header-img.jpg" className="image-header"  /> 
-    
+       <img src="./images/header-img.jpg" className="image-header"  />  
        <div className= "images ">  
             <div  className= "image ">
                <img src="./images/t4.jpg"  className= "egypt-image "/> 
@@ -17,10 +16,7 @@ function HomeScreen ()
                         <strong>
                             Tample of isis at philae 
                         </strong>
-                        
-
                     </p>
-        
                 </div>
             </div>
             <div  className= "image ">
@@ -29,10 +25,8 @@ function HomeScreen ()
                     <p>
                     <strong>
                             The tomp of queen Nefertary the wife of ramses - Luxer - Egypt 
-                        </strong>
-
+                    </strong>
                     </p>
-        
                 </div>
             </div>
             <div  className= "image ">
@@ -41,10 +35,8 @@ function HomeScreen ()
                     <p>
                     <strong>
                             Karnak Tample  
-                        </strong>
-
+                    </strong>
                     </p>
-        
                 </div>
             </div>
             <div  className= "image ">
@@ -53,15 +45,11 @@ function HomeScreen ()
                     <p>
                     <strong>
                             King Amenhotep  
-                        </strong>
-
+                    </strong>
                     </p>
-        
                 </div>
-            </div>
-
-            
+            </div>            
+        </div>
     </div>
-       </div>
 )} 
 export default HomeScreen;  
