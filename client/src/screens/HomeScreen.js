@@ -18,37 +18,14 @@ const reducer =(state, action)=> {
   };
 
 function HomeScreen ()
-{ 
-    const[{loading, error, monuments}, dispatch]=useReducer(logger(reducer), {
-        monuments:[],
-        loading: true,
-        error:'',
-      });
-        //const [Monuments, setMonuments]=useState([]);
-      useEffect(()=>{
-        const fetchData=async ()=> {
-          dispatch({type: 'FETCH_REQUEST'});
-          try {
-            const result=await axios.get('/api/Monuments');
-            dispatch({type:'FETCH_SUCESS',payload:result.data});
-          } catch(err){
-            dispatch({type:'FETCH_FAIL',payload:err.message});
-          }
-          //setMonuments(result.data);
-        };
-        fetchData();
-      }, []);
+{
     return (
         <div>
         <center>
        <h1>EGYPTIAN Civilization</h1> 
-       <div className="monuments">
-         
-
-       </div>
        </center> 
      
-       <img src="./images/header-img.jpg" className="image-header" /> 
+       <img src="./images/header-img.jpg" className="image-header"  /> 
     
        <div className= "images ">  
             <div  className= "image ">
@@ -59,7 +36,6 @@ function HomeScreen ()
                             Tample of isis at philae 
                         </strong>
                     </p>
-        
                 </div>
             </div>
             <div  className= "image ">
@@ -68,10 +44,8 @@ function HomeScreen ()
                     <p>
                     <strong>
                             The tomp of queen Nefertary the wife of ramses - Luxer - Egypt 
-                        </strong>
-
+                    </strong>
                     </p>
-        
                 </div>
             </div>
             <div  className= "image ">
@@ -80,10 +54,8 @@ function HomeScreen ()
                     <p>
                     <strong>
                             Karnak Tample  
-                        </strong>
-
+                    </strong>
                     </p>
-        
                 </div>
             </div>
             <div  className= "image ">
@@ -92,15 +64,41 @@ function HomeScreen ()
                     <p>
                     <strong>
                             King Amenhotep  
-                        </strong>
-
+                    </strong>
                     </p>
-        
                 </div>
             </div>
-
-            
+            <div  className= "image ">
+               <img src="./images/t7.jpg"  className= "egypt-image "/> 
+                 <div className= "image-text ">  
+                    <p>
+                    <strong>
+                        Abu Simble  
+                    </strong>
+                    </p>
+                </div>
+            </div>
+            <div  className= "image ">
+               <img src="./images/t8.jpg"  className= "egypt-image "/> 
+                 <div className= "image-text ">  
+                    <p>
+                    <strong>
+                         Pyramids - Giza   
+                    </strong>
+                    </p>
+                </div>
+            </div>  
+            <div  className= "image ">
+               <img src="./images/t9.jpg"  className= "egypt-image "/> 
+                 <div className= "image-text ">  
+                    <p>
+                    <strong>
+                       The Tample of Luxer 
+                    </strong>
+                    </p>
+                </div>
+            </div>          
+        </div>
     </div>
-       </div>
 )} 
 export default HomeScreen;  

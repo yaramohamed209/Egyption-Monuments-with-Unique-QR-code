@@ -14,31 +14,17 @@ function App() {
     
     <div>
       <header> 
-        <Navbar bg="dark" variant="dark">
-          <Container>
-          <LinkContainer to="/">
-          <Navbar.Brand>Egyptian Monuments</Navbar.Brand>
-          </LinkContainer>
-          </Container>
-          </Navbar>
         <center><strong>Egyptian Monuments With Unique QR Code</strong></center>
        
       
       </header>
       
       <main> 
-      <Container>
         <Routes> 
           <Route path = "/" element={<HomeScreen />}/>
           <Route path = "/monuments/:slag" element={<monumentsScreen />}/>
         </Routes>
-      </Container>
       </main>
-      <footer>
-        <div className="text-center"> 
-          All rights reserved
-        </div>
-      </footer>
     </div>
     </BrowserRouter>
   );
