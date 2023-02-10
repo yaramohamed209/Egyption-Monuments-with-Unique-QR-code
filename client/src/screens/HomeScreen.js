@@ -1,7 +1,7 @@
 import data from "../data.js";
 function HomeScreen ()
 { 
-    
+
     //here data for main page 
     return (
     <div>
@@ -49,7 +49,37 @@ function HomeScreen ()
                     </strong>
                     </p>
                 </div>
-            </div>            
+            </div>
+            <div  className= "image ">
+               <img src="./images/t7.jpg"  className= "egypt-image "/> 
+                 <div className= "image-text ">  
+                    <p>
+                    <strong>
+                        Abu Simble  
+                    </strong>
+                    </p>
+                </div>
+            </div>
+            <div  className= "image ">
+               <img src="./images/t8.jpg"  className= "egypt-image "/> 
+                 <div className= "image-text ">  
+                    <p>
+                    <strong>
+                         Pyramids - Giza   
+                    </strong>
+                    </p>
+                </div>
+            </div>  
+            <div  className= "image ">
+               <img src="./images/t9.jpg"  className= "egypt-image "/> 
+                 <div className= "image-text ">  
+                    <p>
+                    <strong>
+                       The Tample of Luxer 
+                    </strong>
+                    </p>
+                </div>
+            </div>          
         </div>
     </div>
 )} 
