@@ -1,6 +1,7 @@
 import data from "../data.js";
 function HomeScreen ()
 { 
+    
     //here data for main page 
     return (
     <div>
