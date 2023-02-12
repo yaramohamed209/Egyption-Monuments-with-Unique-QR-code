@@ -20,6 +20,13 @@ app.use('/api/seed', seedRouter);
 app.use('/api/monuments', monumentRouter);
 
 
+const __dirname = path.resolve();
+app.use(express.static(path.join(__dirname, '/client/build')));
+app.get('*', (req, res) =>
+  res.sendFile(path.join(__dirname, '/client/build/index.html'))
+);
+
+
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`server at http://localhost:${port}`);

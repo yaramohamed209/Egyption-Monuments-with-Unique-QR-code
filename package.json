@@ -1,0 +1,21 @@
+{
+  "name": "egyption-monuments-with-unique-qr-code-2",
+  "version": "1.0.0",
+  "description": "DONE \r yara \r mariam \r haidy \r mayada\r shrouk \r haidy done",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd server && npm install && cd .. && client && npm install && npm run build ",
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaramohamed209/Egyption-Monuments-with-Unique-QR-code.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaramohamed209/Egyption-Monuments-with-Unique-QR-code/issues"
+  },
+  "homepage": "https://github.com/yaramohamed209/Egyption-Monuments-with-Unique-QR-code#readme"
+}
