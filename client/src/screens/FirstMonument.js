@@ -11,7 +11,9 @@ function FirstMonument(){
                     </p>
                 </div>
                 </div>
-        
+                    
     )
+    Console.log(window.location.href);
+
 }
 export default FirstMonument;

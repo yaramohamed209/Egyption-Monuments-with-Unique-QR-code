@@ -15,8 +15,6 @@ function App() {
     <div>
       <header> 
         <center><strong>Egyptian Monuments With Unique QR Code</strong></center>
-       
-      
       </header>
       
       <main> 

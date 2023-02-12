@@ -18,6 +18,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
       default:
         return state;     
     }
+    
   };
   
 function monumentsScreen()

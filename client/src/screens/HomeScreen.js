@@ -3,6 +3,8 @@
 import {useEffect,useReducer, useState} from 'react';
 import axios from 'axios';
 import logger from 'use-reducer-logger';
+import React from "react";
+
 
 const reducer =(state, action)=> {
     switch(action.type){
@@ -16,11 +18,19 @@ const reducer =(state, action)=> {
         return state;     
     }
   };
-
+  
 function HomeScreen ()
-{
+{ 
+  
+   
+
+ 
+  
     return (
+      
+      
         <div>
+        
         <center>
        <h1>EGYPTIAN Civilization</h1> 
        </center> 
@@ -100,5 +110,9 @@ function HomeScreen ()
             </div>          
         </div>
     </div>
-)} 
+    
+)
+
+}  
+
 export default HomeScreen;  
