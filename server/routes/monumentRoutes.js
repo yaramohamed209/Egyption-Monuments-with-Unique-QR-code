@@ -9,7 +9,7 @@ monumentRouter.get('/', async (req, res) => {
 });
 monumentRouter.get('/slug/slug', async (req, res) => {
   const monument = await monument.findOne({ slug: req.params.slug });
-  if (product) {
+  if (monument) {
     res.send(monument);
   } else {
     res.status(404).send({ message: 'Monument not exist' });
