@@ -6,7 +6,6 @@ function Monument1() {
       <div class="container">
         <div class="row align-items-center my-5">
           <div class="col-lg-7">
-          
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
               src="http://placehold.it/900x400"
@@ -17,12 +16,12 @@ function Monument1() {
             <h1 class="font-weight-light">Monuments</h1>
             <p>
               Some details about this monuments
-              yara
+              yara 
+              
             </p>
           </div>
         </div>
-      </div>
-      
+      </div>      
     </div>
   );
 }
