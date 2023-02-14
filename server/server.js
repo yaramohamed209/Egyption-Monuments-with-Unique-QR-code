@@ -21,9 +21,9 @@ app.use('/api/monuments', monumentRouter);
 
 
 const __dirname = Path.resolve();
-app.use(express.static(Path.join(__dirname, '/client/build')));
+app.use(express.static(Path.join(__dirname, './client/build')));
 app.get('*', (req, res) =>
-  res.sendFile(Path.join(__dirname, '/client/build/index.html'))
+  res.sendFile(Path.join(__dirname, './client/build/index.html'))
 );
 
 
