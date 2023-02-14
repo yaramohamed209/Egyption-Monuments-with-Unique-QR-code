@@ -1,6 +1,6 @@
 import React from "react";
 
-function Monuments() {
+function Monument1() {
   return (
     <div className="events">
       <div class="container">
@@ -16,8 +16,8 @@ function Monuments() {
           <div class="col-lg-5">
             <h1 class="font-weight-light">Monuments</h1>
             <p>
-              Some details about this monuments 
-              yaraaa
+              Some details about this monuments
+              yara
             </p>
           </div>
         </div>
@@ -27,4 +27,4 @@ function Monuments() {
   );
 }
 
-export default Monuments;
+export default Monument1;
