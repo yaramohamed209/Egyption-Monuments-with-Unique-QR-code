@@ -8,6 +8,7 @@ import {
   Footer,
   Home,
   Monuments,
+  Monument1,
   Events,
   Blog,
   Posts,
@@ -20,6 +21,7 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/monuments" element={<Monuments />} />
+      <Route path="/monument1" element={<Monument1 />} />
       <Route path="/events" element={<Events />} />
       <Route path="/blog" element={<Blog />}>
         <Route path="" element={<Posts />} />

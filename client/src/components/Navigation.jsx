@@ -17,11 +17,7 @@ function Navigation() {
                   <span className="sr-only">(current)</span>
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/monuments">
-                  Monuments
-                </NavLink>
-              </li>
+             
               <li className="nav-item">
                 <NavLink className="nav-link" to="/events">
                   Events
