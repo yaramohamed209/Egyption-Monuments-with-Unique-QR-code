@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/yaramohamed209/Egyption-Monuments-with-Unique-QR-code#readme",
   "dependencies": {
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "react-speech-kit": "^3.0.1"
   }
 }
