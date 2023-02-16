@@ -6,7 +6,7 @@ import seedRouter from './routes/seedRoutes.js';
 import monumentRouter from './routes/monumentRoutes.js';
 dotenv.config();
 
-mongoose
+  mongoose
   .connect(process.env.MONGODB_URL)
   .then(() => {
     console.log('connected to db');
