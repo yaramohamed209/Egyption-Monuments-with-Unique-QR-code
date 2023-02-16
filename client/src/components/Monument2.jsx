@@ -2,7 +2,7 @@ import React from "react";
 import data from "../data.js";
 import { useSpeechSynthesis } from 'react-speech-kit';
 
-function Monument1() {
+function Monument2() {
   const { speak } = useSpeechSynthesis();
   const [value] = React.useState('');
   return (
@@ -32,4 +32,4 @@ function Monument1() {
 }
 
 
-export default Monument1;
+export default Monument2;
