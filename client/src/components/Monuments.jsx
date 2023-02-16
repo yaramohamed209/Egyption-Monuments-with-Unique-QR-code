@@ -1,4 +1,5 @@
 import React from 'react';
+import data from "../data.js";
 import { useSpeechSynthesis } from 'react-speech-kit';
 
 function Monuments() {
@@ -20,7 +21,7 @@ function Monuments() {
               <h1 class="font-weight-light">Monuments</h1>
               <textarea
                 rows={5}
-                value={value}
+                value={data.Monuments[0].description}
                 onChange={(e) => setValue(e.target.value)}
               ></textarea>
               <button onClick={() => speak({ text: value })}>Speak</button>
