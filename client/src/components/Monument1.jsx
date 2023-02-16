@@ -18,10 +18,10 @@ function Monument1() {
               />
             </div>
             <div class="col-lg-5">
-              <h1 class="font-weight-light">Monumentss</h1>
+              <h1 class="font-weight-light">Monuments</h1>
               <textarea
                 rows={5}
-                value={data.Monuments[1].description}
+                value={data.Monuments[0].description}
                 disabled
               >
               </textarea> 

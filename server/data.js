@@ -1,7 +1,7 @@
 const data = {
   monuments: [
     {
-      name: 'First Monument',
+      name: 'First Monumentssssssssssss',
       slug: 'First Monument',
       category: 'Monuments',
       image: '/images/p1.jpg',
