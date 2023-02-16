@@ -1,29 +1,38 @@
 import React from "react";
+import data from "../data.js";
+import { useSpeechSynthesis } from 'react-speech-kit';
 
 function Monument1() {
+  const { speak } = useSpeechSynthesis();
+  const [value] = React.useState('');
   return (
-    <div className="events">
-      <div class="container">
-        <div class="row align-items-center my-5">
-          <div class="col-lg-7">
-            <img
-              class="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
-              alt=""
-            />
-          </div>
-          <div class="col-lg-5">
-            <h1 class="font-weight-light">Monuments</h1>
-            <p>
-              Some details about this monuments
-              yara 
-              
-            </p>
+    <div>
+      <div className="events">
+        <div class="container">
+          <div class="row align-items-center my-5">
+            <div class="col-lg-7">
+              <img
+                class="img-fluid rounded mb-4 mb-lg-0"
+                src="http://placehold.it/900x400"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-5">
+              <h1 class="font-weight-light">Monumentss</h1>
+              <textarea
+                rows={5}
+                value={data.Monuments[1].description}
+                disabled
+              >
+              </textarea> 
+              <button onClick={() => speak({ text:value })}>Speak</button>
+            </div>
           </div>
         </div>
-      </div>      
+      </div>
     </div>
   );
 }
+
 
 export default Monument1;
