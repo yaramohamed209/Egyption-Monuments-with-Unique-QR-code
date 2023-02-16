@@ -13,7 +13,7 @@ function Monument1() {
             <div class="col-lg-7">
               <img
                 class="img-fluid rounded mb-4 mb-lg-0"
-                src="http://placehold.it/900x400"
+                src={data.Monuments[0].image}
                 alt=""
               />
             </div>
