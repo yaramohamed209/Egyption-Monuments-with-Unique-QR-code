@@ -1,8 +1,8 @@
 const data = {
   monuments: [
     {
-      name: 'First Monumentssssssssssss',
-      link:'https://egyptian-monuments.herokuapp.com/monument1',
+      name: 'First Monument',
+      slug:'https://egyptian-monuments.herokuapp.com/monument1',
       category: 'Monuments',
       image: '/images/p1.jpg',
       description: 'Details of first monument',
