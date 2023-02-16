@@ -17,7 +17,7 @@ function Monuments() {
               />
             </div>
             <div class="col-lg-5">
-              <h1 class="font-weight-light">Monumentss</h1>
+              <h1 class="font-weight-light">Monuments</h1>
               <textarea
                 rows={5}
                 value={value}
