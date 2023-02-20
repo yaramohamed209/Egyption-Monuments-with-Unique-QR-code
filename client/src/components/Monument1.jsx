@@ -54,7 +54,15 @@ function Monument1() {
             {opt.name}
           </option>
         ))}
-      </select> */}
+      </select> */} 
+      <div class="monument-img">
+              <img
+                class="img-fluid rounded mb-4 mb-lg-0"
+                src="http://placehold.it/600x400"
+                alt=""
+              />
+      </div>
+      
       Choose Language ({to}) :
       <select
         onChange={(e) => setTo(e.target.value)}
