@@ -6,11 +6,11 @@ function Home() {
       <div class="container">
         <div class="row align-items-center my-5">
           <div class="col-lg-20">
-          <img src="./images/header-img.jpg" className="image-header"  /> 
+          <img src="./images/header-img.jpg" className="image-header" alt="" /> 
     
     <div className= "images ">  
          <div  className= "image ">
-            <img src="./images/t4.jpg"  className= "egypt-image "/> 
+            <img src="./images/t4.jpg"  className= "egypt-image "alt=""/> 
               <div className= "image-text ">  
                  <p>
                   <strong>
@@ -20,7 +20,7 @@ function Home() {
              </div>
          </div>
          <div  className= "image ">
-            <img src="./images/t2.jpg"  className= "egypt-image "/> 
+            <img src="./images/t2.jpg"  className= "egypt-image "alt=""/> 
               <div className= "image-text ">  
                  <p>
                  <strong>
@@ -30,7 +30,7 @@ function Home() {
              </div>
          </div>
          <div  className= "image ">
-            <img src="./images/t3.jpg"  className= "egypt-image "/> 
+            <img src="./images/t3.jpg"  className= "egypt-image "alt=""/> 
               <div className= "image-text ">  
                  <p>
                  <strong>
@@ -40,7 +40,7 @@ function Home() {
              </div>
          </div>
          <div  className= "image ">
-            <img src="./images/t6.jpg"  className= "egypt-image "/> 
+            <img src="./images/t6.jpg"  className= "egypt-image "alt=""/> 
               <div className= "image-text ">  
                  <p>
                  <strong>
@@ -50,7 +50,7 @@ function Home() {
              </div>
          </div>
          <div  className= "image ">
-            <img src="./images/t7.jpg"  className= "egypt-image "/> 
+            <img src="./images/t7.jpg"  className= "egypt-image " alt=""/> 
               <div className= "image-text ">  
                  <p>
                  <strong>
@@ -60,7 +60,7 @@ function Home() {
              </div>
          </div>
          <div  className= "image ">
-            <img src="./images/t8.jpg"  className= "egypt-image "/> 
+            <img src="./images/t8.jpg"  className= "egypt-image " alt=""/> 
               <div className= "image-text ">  
                  <p>
                  <strong>

@@ -5,10 +5,9 @@ import data from '../data.js';
 
 function Monument1() {
   const [options, setOptions] = useState([]);
-  const [to, setTo] = useState('en');
-  const [from, setFrom] = useState('en');
+  
   const input = data.Monuments[0].description;
-  const [setInput] = useState('');
+ 
   const [output, setOutput] = useState('');
   const translate = () => {
     // curl -X POST "https://libretranslate.de/translate" -H  "accept: application/json" -H  "Content-Type: application/x-www-form-urlencoded" -d "q=hello&source=en&target=es&api_key=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
@@ -80,7 +79,11 @@ function Monument1() {
         </textarea> */}
       </div>
       <div>
-        <textarea disabled value={output} id="txtFld">
+        <textarea disabled
+         value={output} 
+         id="txtFld"
+         placeholder={data.Monuments[0].description}
+         >
           {data.Monuments[0].description}
         </textarea>
       </div>
@@ -216,7 +219,8 @@ function getAllVoices() {
 function createBlurbs() {
   blurbs = {};
 }
-function getLanguageTags() {
+function getLanguageTags() { 
+  
   let langs = [
     'ar-Arabic',
     'cs-Czech',
@@ -260,7 +264,8 @@ function getLanguageTags() {
   for (let i = 0; i < langs.length; i++) {
     let langparts = langs[i].split('-');
     langobjects.push({ code: langparts[0], name: langparts[1] });
-  }
+  } 
+  
   return langobjects;
 }
 // Generic Utility Functions
