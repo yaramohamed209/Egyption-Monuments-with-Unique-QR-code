@@ -5,7 +5,7 @@ import data from '../data.js';
 
 function Monument1() {
   const [options, setOptions] = useState([]);
-  
+  const [from] = useState('en');
   const input = data.Monuments[0].description;
   const [to, setTo] = useState('en');
   const [output, setOutput] = useState('');
