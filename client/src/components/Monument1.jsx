@@ -275,9 +275,7 @@ function qs(selectorText) {
 }
 function getLookupTable(objectsArray, propname) {
   return objectsArray.reduce(
-    (accumulator, currentValue) => (
-      (accumulator[currentValue[propname]] = currentValue), accumulator
-    ),
+    (accumulator, currentValue) => ((accumulator[currentValue[propname]] = currentValue), accumulator),
     {}
   );
 }

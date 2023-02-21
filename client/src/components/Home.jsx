@@ -70,7 +70,7 @@ function Home() {
              </div>
          </div>  
          <div  className= "image ">
-            <img src="./images/t9.jpg"  className= "egypt-image "/> 
+            <img src="./images/t9.jpg"  className= "egypt-image "alt=""/> 
               <div className= "image-text ">  
                  <p>
                  <strong>
