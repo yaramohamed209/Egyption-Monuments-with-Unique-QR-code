@@ -5,9 +5,10 @@ import data from '../data.js';
 
 function Monument1() {
   const [options, setOptions] = useState([]);
-  const [from] = useState('en');
-  const input = data.Monuments[0].description;
   const [to, setTo] = useState('en');
+  const [from, setFrom] = useState('en');
+  const input = data.Monuments[0].description;
+  //const [setInput] = useState('');
   const [output, setOutput] = useState('');
   const translate = () => {
     // curl -X POST "https://libretranslate.de/translate" -H  "accept: application/json" -H  "Content-Type: application/x-www-form-urlencoded" -d "q=hello&source=en&target=es&api_key=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
@@ -46,6 +47,14 @@ function Monument1() {
 
   return (
     <div className="app">
+      <div class="col-lg-7">
+        <img
+          class="img-fluid rounded mb-4 mb-lg-0"
+          src={data.Monuments[0].image}
+          alt=""
+        />
+      </div>
+      <div id="root"></div>
       {/* from ({from}):
       <select onChange={(e) => setFrom(e.target.value)}>
         {options.map((opt) => (
@@ -53,15 +62,7 @@ function Monument1() {
             {opt.name}
           </option>
         ))}
-      </select> */} 
-      <div class="monument-img">
-              <img
-                class="img-fluid rounded mb-4 mb-lg-0"
-                src="http://placehold.it/600x400"
-                alt=""
-              />
-      </div>
-      
+      </select> */}
       Choose Language ({to}) :
       <select
         onChange={(e) => setTo(e.target.value)}
@@ -79,13 +80,44 @@ function Monument1() {
         </textarea> */}
       </div>
       <div>
-        <textarea disabled
-         value={output} 
-         id="txtFld"
-         placeholder={data.Monuments[0].description}
-         >
-          {data.Monuments[0].description}
-        </textarea>
+        <textarea
+          rows={6}
+          cols={103}
+          disabled
+          value={output}
+          id="txtFld"
+          placeholder={data.Monuments[0].description}
+        ></textarea>
+      </div>
+      <div class="uiunit">
+        <select id="languageMenu"></select>
+      </div>
+      <div class="uiunit">
+        <label for="speakerMenu">Choose Voice: </label>
+        <select id="speakerMenu"></select>
+      </div>
+      <div class="uiunit">
+        <label for="rateFld">Speed: </label>
+        <input
+          type="number"
+          id="rateFld"
+          min="0.5"
+          max="2"
+          step="0.1"
+          value="0.8"
+        />
+
+        <button type="button" id="speakBtn">
+          Speak
+        </button>
+        <br />
+      </div>
+      <div id="temp"></div>
+      <div class="more">
+        <img class="A1" src="/images/Akhnatoon/a2.jpg" alt="" />
+        <img class="A2" src="/images/Akhnatoon/a3.jpg" alt="" />
+        <img class="A3" src="/images/Akhnatoon/a4.jpg" alt="" />
+        <img class="A3" src="/images/Akhnatoon/a5.jpg" alt="" />
       </div>
     </div>
   );
@@ -219,8 +251,7 @@ function getAllVoices() {
 function createBlurbs() {
   blurbs = {};
 }
-function getLanguageTags() { 
-  
+function getLanguageTags() {
   let langs = [
     'ar-Arabic',
     'cs-Czech',
@@ -264,8 +295,7 @@ function getLanguageTags() {
   for (let i = 0; i < langs.length; i++) {
     let langparts = langs[i].split('-');
     langobjects.push({ code: langparts[0], name: langparts[1] });
-  } 
-  
+  }
   return langobjects;
 }
 // Generic Utility Functions
@@ -275,7 +305,9 @@ function qs(selectorText) {
 }
 function getLookupTable(objectsArray, propname) {
   return objectsArray.reduce(
-    (accumulator, currentValue) => ((accumulator[currentValue[propname]] = currentValue), accumulator),
+    (accumulator, currentValue) => (
+      (accumulator[currentValue[propname]] = currentValue), accumulator
+    ),
     {}
   );
 }
