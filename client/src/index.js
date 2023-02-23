@@ -1,8 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import * as serviceWorker from './serviceWorker';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import {
   Navigation,
   Footer,
@@ -13,7 +13,13 @@ import {
   Blog,
   Posts,
   Post,
-} from "./components";
+  Monument2,
+  Monument3,
+  Monument4,
+  Monument5,
+  Monument6,
+  Monument7,
+} from './components';
 
 ReactDOM.render(
   <Router>
@@ -22,7 +28,12 @@ ReactDOM.render(
       <Route path="/" element={<Home />} />
       <Route path="/monuments" element={<Monuments />} />
       <Route path="/monument1" element={<Monument1 />} />
-      
+      <Route path="/monument2" element={<Monument2 />} />
+      <Route path="/monument3" element={<Monument3 />} />
+      <Route path="/monument4" element={<Monument4 />} />
+      <Route path="/monument5" element={<Monument5 />} />
+      <Route path="/monument6" element={<Monument6 />} />
+      <Route path="/monument7" element={<Monument7 />} />
       <Route path="/events" element={<Events />} />
       <Route path="/blog" element={<Blog />}>
         <Route path="" element={<Posts />} />
@@ -32,7 +43,7 @@ ReactDOM.render(
     <Footer />
   </Router>,
 
-  document.getElementById("root")
+  document.getElementById('root')
 );
 
 serviceWorker.unregister();
