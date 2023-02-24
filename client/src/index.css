@@ -98,6 +98,8 @@ body {
 .img-large {
   max-width: 100%;
 }
+/*panorama*/
+
 /*language*/
 iframe {
   display: none;
@@ -188,6 +190,10 @@ footer {
   }
   .goog-te-gadget-icon {
     display: none;
+  }
+  .box {
+    width: 800px;
+    height: 555px;
   }
 }
 .more { 

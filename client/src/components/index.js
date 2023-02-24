@@ -13,3 +13,4 @@ export { default as Monument4 } from './Monument4';
 export { default as Monument5 } from './Monument5';
 export { default as Monument6 } from './Monument6';
 export { default as Monument7 } from './Monument7';
+export { default as Panorama } from './Panorama';
