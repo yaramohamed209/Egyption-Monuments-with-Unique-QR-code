@@ -3,12 +3,12 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import data from '../data.js';
 
-function Monument1() {
+function Monuments() {
   const [options, setOptions] = useState([]);
   const [to, setTo] = useState('en');
-  const [from] = useState('en');
-  const input = data.Monuments[1].description;
-
+  const [from, setFrom] = useState('en');
+  const input = data.Monuments[0].description;
+  //const [setInput] = useState('');
   const [output, setOutput] = useState('');
   const translate = () => {
     // curl -X POST "https://libretranslate.de/translate" -H  "accept: application/json" -H  "Content-Type: application/x-www-form-urlencoded" -d "q=hello&source=en&target=es&api_key=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
@@ -50,7 +50,7 @@ function Monument1() {
       <div class="col-lg-7">
         <img
           class="img-fluid rounded mb-4 mb-lg-0"
-          src={data.Monuments[1].image}
+          src={data.Monuments[0].image}
           alt=""
         />
       </div>
@@ -93,15 +93,15 @@ function Monument1() {
         <label for="speakerMenu">Choose Voice: </label>
         <select id="speakerMenu"></select>
       </div>
-      <div class="uiunit">
+      <div class="uiunit_none">
         <label for="rateFld">Speed: </label>
         <input
-          value="0.8"
           type="number"
           id="rateFld"
           min="0.5"
           max="2"
           step="0.1"
+          value="0.8"
         />
       </div>
       <div>
@@ -111,13 +111,14 @@ function Monument1() {
       </div>
       <div id="temp"></div>
       <div class="more">
-        <img class="A1" src="/images/kaaba/k2.jpg" alt="" />
-        <img class="A1" src="/images/kaaba/k3.jpg" alt="" />
-        <img class="A1" src="/images/kaaba/k4.jpg" alt="" />
-        <img class="A1" src="/images/kaaba/k5.jpg" alt="" />
-      </div>
-      <div class="uiunit">
-        <select id="languageMenu"></select>
+        <img class="A1" src="/images/Akhnatoon/a2.jpg" alt="" />
+        <img class="A1" src="/images/Akhnatoon/a3.jpg" alt="" />
+        <img class="A1" src="/images/Akhnatoon/a4.jpg" alt="" />
+        <img class="A1" src="/images/Akhnatoon/a5.jpg" alt="" />
+
+        <div class="uiunit">
+          <select id="languageMenu"></select>
+        </div>
       </div>
     </div>
   );
@@ -127,7 +128,7 @@ let allVoices, allLanguages, primaryLanguages, langtags, langhash, langcodehash;
 let txtFld, rateFld, speakBtn, speakerMenu, languageMenu, blurbs;
 let voiceIndex = 0;
 let initialSetup = true;
-const defaultBlurb = data.Monuments[1].description;
+const defaultBlurb = data.Monuments[0].description;
 
 function init() {
   speakBtn = qs('#speakBtn');
@@ -305,7 +306,7 @@ function qs(selectorText) {
 }
 function getLookupTable(objectsArray, propname) {
   return objectsArray.reduce(
-    (currentValue, accumulator) => (
+    (accumulator, currentValue) => (
       (accumulator[currentValue[propname]] = currentValue), accumulator
     ),
     {}
@@ -319,4 +320,4 @@ document.addEventListener('DOMContentLoaded', function (e) {
   }
 });
 
-export default Monument1;
+export default Monuments;

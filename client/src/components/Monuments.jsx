@@ -93,7 +93,7 @@ function Monuments() {
         <label for="speakerMenu">Choose Voice: </label>
         <select id="speakerMenu"></select>
       </div>
-      <div class="uiunit">
+      <div class="uiunit_none">
         <label for="rateFld">Speed: </label>
         <input
           type="number"

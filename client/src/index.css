@@ -98,8 +98,6 @@ body {
 .img-large {
   max-width: 100%;
 }
-/*panorama*/
-
 /*language*/
 iframe {
   display: none;
@@ -191,30 +189,37 @@ footer {
   .goog-te-gadget-icon {
     display: none;
   }
-  .box {
-    width: 800px;
-    height: 555px;
-  }
 }
-.more { 
-  overflow: hidden; 
-  width: 800px; 
-  padding: 20px; 
-  margin: 20px auto; 
-} 
-.more img { 
-  float: left; 
-  width: 25%; 
-  padding: 20px; 
-} 
-.A1, 
-.A2, 
-.A3 { 
-  width: 400px; 
-  height: 200px; 
-} 
-.col-lg-7 { 
-  display: flex; 
-  justify-content: end; 
-  width: 100%; 
+
+.more {
+  overflow: hidden;
+  width: 1000px;
+  padding: 20px;
+  margin: 20px auto;
+}
+.more img {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+.A1,
+.A2,
+.A3 {
+  width: 400px;
+  height: 200px;
+}
+.col-lg-7 {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+.uiunit {
+  display: flex;
+  align-items: flex-end;
+}
+.uiunit_none {
+  display: none;
+}
+#languageMenu {
+  display: none;
 }
