@@ -54,6 +54,7 @@ function Monument6() {
           alt=""
         />
       </div>
+      <center>
       <div id="root"></div>
       {/* from ({from}):
       <select onChange={(e) => setFrom(e.target.value)}>
@@ -62,8 +63,10 @@ function Monument6() {
             {opt.name}
           </option>
         ))}
-      </select> */}
+      </select> */} 
+      <div> 
       Choose Language ({to}) :
+      </div>
       <select
         onChange={(e) => setTo(e.target.value)}
         onClick={(e) => translate()}
@@ -79,36 +82,44 @@ function Monument6() {
           {data.Monuments[0].description}
         </textarea> */}
       </div>
-      <div>
+      
+      <div >
         <textarea
           rows={6}
           cols={103}
           disabled
           value={output}
           id="txtFld"
-          placeholder="Please Select Language"
+          placeholder="Please Select Language" 
+          className='text'
         ></textarea>
       </div>
+      <div className='choose'>
       <div class="uiunit">
-        <label for="speakerMenu">Choose Voice: </label>
-        <select id="speakerMenu"></select>
+        <label for="speakerMenu" className='choose'>Choose Voice: </label>
       </div>
+        <select id="speakerMenu"></select>
+      </div> 
+      
       <div class="uiunit_none">
         <label for="rateFld">Speed: </label>
         <input
-          value="0.8"
           type="number"
           id="rateFld"
           min="0.5"
           max="2"
           step="0.1"
+          value="0.8"
         />
       </div>
-      <div>
+      <div> 
+      
+
         <button type="button" id="speakBtn">
           Speak
         </button>
-      </div>
+      </div> 
+      
       <div id="temp"></div>
       <div class="more">
         <img class="A1" src="/images/Chair/CH2.jpg" alt="" />
@@ -119,6 +130,7 @@ function Monument6() {
       <div class="uiunit">
         <select id="languageMenu"></select>
       </div>
+      </center>
     </div>
   );
 }

@@ -228,7 +228,9 @@ footer {
 .A2,
 .A3 {
   width: 400px;
-  height: 200px;
+  height: 200px; 
+  border-radius: 20px;
+  border-radius: 50%;
 }
 .col-lg-7 {
   display: flex;

@@ -65,8 +65,10 @@ function Monuments() {
             {opt.name}
           </option>
         ))}
-      </select> */}
+      </select> */} 
+      <div> 
       Choose Language ({to}) :
+      </div>
       <select
         onChange={(e) => setTo(e.target.value)}
         onClick={(e) => translate()}
@@ -123,11 +125,11 @@ function Monuments() {
       
       
       <div id="temp"></div>
-      <div class="more">
-        <img class="A1" src="/images/Akhnatoon/a2.jpg" alt="" />
-        <img class="A1" src="/images/Akhnatoon/a3.jpg" alt="" />
-        <img class="A1" src="/images/Akhnatoon/a4.jpg" alt="" />
-        <img class="A1" src="/images/Akhnatoon/a5.jpg" alt="" />
+      <div className='more'>
+        <img className="A1" src="/images/Akhnatoon/a2.jpg" alt="" />
+        <img className="A1" src="/images/Akhnatoon/a3.jpg" alt="" />
+        <img className="A1" src="/images/Akhnatoon/a4.jpg" alt="" />
+        <img className="A1" src="/images/Akhnatoon/a5.jpg" alt="" />
 
         <div class="uiunit">
           <select id="languageMenu"></select>
