@@ -234,11 +234,13 @@ footer {
   display: flex;
   justify-content: end;
   width: 100%;
-}
+} 
+/*
 .uiunit {
   display: flex;
   align-items: flex-end;
-}
+} 
+*/
 .uiunit_none {
   display: none;
 }
