@@ -23,6 +23,7 @@ function Events() {
   };
   return (
     <div className="events">
+      <div id="google_translate_element"></div>
       <div class="container">
         <div class="row align-items-center my-5">
           <div class="col-lg-7">
