@@ -50,10 +50,11 @@ function Monuments() {
       <div class="col-lg-7">
         <img
           class="img-fluid rounded mb-4 mb-lg-0"
-          src={data.Monuments[1].image}
+          src={data.Monuments[0].image}
           alt=""
         />
       </div>
+      <center>
       <div id="root"></div>
       {/* from ({from}):
       <select onChange={(e) => setFrom(e.target.value)}>
@@ -62,8 +63,10 @@ function Monuments() {
             {opt.name}
           </option>
         ))}
-      </select> */}
+      </select> */} 
+      <div> 
       Choose Language ({to}) :
+      </div>
       <select
         onChange={(e) => setTo(e.target.value)}
         onClick={(e) => translate()}
@@ -79,24 +82,26 @@ function Monuments() {
           {data.Monuments[0].description}
         </textarea> */}
       </div>
-      <div>
+      
+      <div >
         <textarea
           rows={6}
           cols={103}
           disabled
           value={output}
           id="txtFld"
-          placeholder={data.Monuments[1].description}
+          placeholder="Please Select Language" 
+          className='text'
         ></textarea>
       </div>
+      <div className='choose'>
       <div class="uiunit">
-        <select id="languageMenu"></select>
+        <label for="speakerMenu" className='choose'>Choose Voice: </label>
       </div>
-      <div class="uiunit">
-        <label for="speakerMenu">Choose Voice: </label>
         <select id="speakerMenu"></select>
-      </div>
-      <div class="uiunit">
+      </div> 
+      
+      <div class="uiunit_none">
         <label for="rateFld">Speed: </label>
         <input
           type="number"
@@ -106,19 +111,27 @@ function Monuments() {
           step="0.1"
           value="0.8"
         />
+      </div>
+      <div> 
+      
 
         <button type="button" id="speakBtn">
           Speak
         </button>
-        <br />
-      </div>
+      </div> 
+      
       <div id="temp"></div>
       <div class="more">
-        <img class="A1" src="/images/kaaba/k2.jpg" alt="" />
-        <img class="A2" src="/images/kaaba/k3.jpg" alt="" />
-        <img class="A3" src="/images/kaaba/k4.jpg" alt="" />
-        <img class="A3" src="/images/kaaba/k5.jpg" alt="" />
+        <img class="A1" src="/images/Akhnatoon/a2.jpg" alt="" />
+        <img class="A1" src="/images/Akhnatoon/a3.jpg" alt="" />
+        <img class="A1" src="/images/Akhnatoon/a4.jpg" alt="" />
+        <img class="A1" src="/images/Akhnatoon/a5.jpg" alt="" />
+
+        <div class="uiunit">
+          <select id="languageMenu"></select>
+        </div>
       </div>
+      </center>
     </div>
   );
 }
@@ -127,7 +140,7 @@ let allVoices, allLanguages, primaryLanguages, langtags, langhash, langcodehash;
 let txtFld, rateFld, speakBtn, speakerMenu, languageMenu, blurbs;
 let voiceIndex = 0;
 let initialSetup = true;
-const defaultBlurb = data.Monuments[1].description;
+const defaultBlurb = data.Monuments[0].description;
 
 function init() {
   speakBtn = qs('#speakBtn');
@@ -320,4 +333,3 @@ document.addEventListener('DOMContentLoaded', function (e) {
 });
 
 export default Monuments;
-
