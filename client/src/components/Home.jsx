@@ -1,9 +1,32 @@
 import React from "react";
 function Home()
  {
+
+  React.useEffect(() => { 
+    var addScript = document.createElement('script'); 
+    addScript.setAttribute( 
+      'src', 
+      '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit' 
+    ); 
+    document.body.appendChild(addScript); 
+    window.googleTranslateElementInit = googleTranslateElementInit; 
+  }, []); 
+ 
+  const googleTranslateElementInit = () => { 
+    new window.google.translate.TranslateElement( 
+      { 
+        pageLanguage: 'en', 
+        // eslint-disable-next-line no-undef 
+        layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL, 
+      }, 
+      'google_translate_element' 
+    ); 
+  };
+
   return (
 
     <div className="home">
+      <div id="google_translate_element"></div>
       <div class="container">
         <div class="row align-items-center my-5">
           <div class="col-lg-20"></div> 
@@ -21,46 +44,44 @@ function Home()
                     </div>   
             </div>
         </div>
-
-
         <div class="wrapper">
-    <div class="box box1">
-      <p>
-    Egypt is full of dreams, mysteries<br></br>
-    and memories.Go discover them !!
-    </p>
-    </div>
-    </div>
-    <div class="row ">
-     <div class="column">
-    <label class="textOverImage" >
-  <input type="checkbox"/>
-  <img src="images/Highlights/Nile.jpg" className= "egypt "alt=""/> 
-  <h2>Egyptian Nile</h2>
-  </label>
-    </div>
-<div class="column">
-<label class="textOverImage" >
-  <input type="checkbox"/>
-  <img src="images/Highlights/pyramids.jpg"  className= "egypt "alt=""/> 
-  <h2>Giza Pyramids</h2>
-</label>
-</div>
-<div class="column">
-<label class="textOverImage" >
-  <input type="checkbox"/>
-  <img src="images/Highlights/abusimbel.jpg"  className= "egypt"alt=""/> 
-  <h2>Abu Simbel Temples</h2>
-</label>
-</div>
-<div class="column">
-<label class="textOverImage" >
-  <input type="checkbox"/>
-  <img src="images/Highlights/islamic.jpg"  className= "egypt "alt=""/> 
-  <h2>Museum of Islamic Art</h2>
-</label>
-</div>
-</div>
+          <div className="box1">
+            <p>
+             Egypt is full of dreams, mysteries<br></br>
+              and memories.Go discover them !!
+            </p>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="column">
+            <label class="textOverImage" >
+              <input type="checkbox"/>
+                 <img src="images/Highlights/Nile.jpg" className= "egypt "alt=""/> 
+                   <h2>Egyptian Nile</h2>
+            </label>
+          </div>
+         <div class="column">
+           <label class="textOverImage" >
+              <input type="checkbox"/>
+                  <img src="images/Highlights/pyramids.jpg"  className= "egypt "alt=""/> 
+                    <h2>Giza Pyramids</h2>
+            </label>
+          </div>
+          <div class="column">
+            <label class="textOverImage" >
+              <input type="checkbox"/>
+                <img src="images/Highlights/abusimbel.jpg"  className= "egypt"alt=""/> 
+                    <h2>Abu Simbel Temples</h2>
+            </label>
+          </div>
+          <div class="column">
+            <label class="textOverImage" >
+              <input type="checkbox"/>
+                <img src="images/Highlights/islamic.jpg"  className= "egypt "alt=""/> 
+                    <h2>Museum of Islamic Art</h2>
+            </label>
+          </div>
+          </div>
 
 <div class="row ">
 <div class="column">

@@ -223,6 +223,9 @@ footer {
 .A3 { 
   width: 400px; 
   height: 200px; 
+  height: 200px; 
+  border-radius: 20px;
+  border-radius: 50%;
 } 
 .col-lg-7 { 
   display: flex; 
@@ -234,7 +237,25 @@ body{
   padding: 0;
   margin: 0;
   background-color: floralwhite;
-}
+} 
+.text{
+  margin: auto;
+  
+  border: 3px solid 3A547B;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+} 
+.choose
+{
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  
+} 
 
 h2{
   background-color:#2e2b2b;
@@ -452,6 +473,10 @@ h1{
     clear: both;
     display: table;
   }
-
-
+.uiunit_none {
+  display: none;
+}
+.languageMenu{
+  display: none;
+}
 
