@@ -39,6 +39,7 @@ ReactDOM.render(
       <Route path="/events" element={<Events />} />
       <Route path="/blog" element={<Blog />}>
         <Route path="" element={<Posts />} />
+
         <Route path=":postSlug" element={<Post />} />
       </Route>
     </Routes>
