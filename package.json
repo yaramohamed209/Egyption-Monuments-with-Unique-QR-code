@@ -20,10 +20,12 @@
   "homepage": "https://github.com/yaramohamed209/Egyption-Monuments-with-Unique-QR-code#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "framer-motion": "^10.0.1",
     "hbs": "^4.2.0",
     "mongoose": "^6.10.0",
     "nodemon": "^2.0.20",
     "path": "^0.12.7",
-    "react-speech-kit": "^3.0.1"
+    "react-speech-kit": "^3.0.1",
+    "swiper": "^9.0.5"
   }
 }

@@ -114,21 +114,86 @@ image-header {
 .img-large {
   max-width: 100%;
 }
+/*--------------monument-------*/
+.heading {
+  padding: 1rem 0;
+  font-size: 3.5rem;
+  text-align: center;
+}
+swiper-slide {
+  width: 20rem;
+  height: 10rem;
+  position: relative;
+}
 
-/*language*/
-iframe {
+.swiper-slide img {
+  width: 37rem;
+  height: 42rem;
+  border-radius: 2rem; 
+}
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
   display: none;
 }
-a.VIpgJd-ZVi9od-l4eHX-hSRGPd {
-  display: none;
+.swiper-3d {
+  perspective: 1200px;
 }
-div.skiptranslate.goog-te-gadget {
-  position: absolute;
-  top: 120px;
-  right: 60px;
+@media (max-width: 990px) {
+  .slider-controler.swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
+  }
 }
-.goog-te-combo {
-  height: 21px;
+
+@media (max-width: 450px) {
+  .slider-controler.swiper-button-next {
+    left: 80% !important;
+    transform: translateX(-80%) !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .slider-controler.swiper-button-prev {
+    left: 30% !important;
+    transform: translateX(-30%) !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .slider-controler.swiper-button-prev {
+    left: 20% !important;
+    transform: translateX(-20%) !important;
+  }
+}
+@media (max-width: 500px) {
+  .swiper_container {
+    height: 47rem;
+  }
+  .swiper-slide {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+  .swiper-slide img {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+}
+@media (min-width: 1440px) {
+  html {
+    zoom: 1.5;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    zoom: 1.7;
+  }
+}
+
+@media (min-width: 3860px) {
+  html {
+    zoom: 2.5;
+  }
 }
 /*original*/
 header,
