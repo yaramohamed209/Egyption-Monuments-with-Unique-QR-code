@@ -3,10 +3,13 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import data from '../data.js';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+
+
+import "swiper/swiper.min.css";
+import "swiper/components/effect-coverflow/effect-coverflow.min.css";
+import "swiper/components/pagination/pagination.min.css";
+import "swiper/components/navigation/navigation.min.css";
+
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
 import slide_image_1 from './assets/images2/Akh1.jpg';
@@ -68,130 +71,128 @@ function Monuments() {
         />
       </div>
       <center>
-      <div id="root"></div>
-      {/* from ({from}):
+        <div id="root"></div>
+        {/* from ({from}):
       <select onChange={(e) => setFrom(e.target.value)}>
         {options.map((opt) => (
           <option key={opt.code} value={opt.code}>
             {opt.name}
           </option>
         ))}
-      </select> */} 
-      <div> 
-      Choose Language ({to}) :
-      </div>
-      <select
-        onChange={(e) => setTo(e.target.value)}
-        onClick={(e) => translate()}
-      >
-        {options.map((opt) => (
-          <option key={opt.code} value={opt.code}>
-            {opt.name}
-          </option>
-        ))}
-      </select>
-      <div>
-        {/* <textarea onFocus={(e) => setInput(e.target.value)}>
+      </select> */}
+        <div class="choose">Choose Language ({to}) :</div>
+        <select
+          onChange={(e) => setTo(e.target.value)}
+          onClick={(e) => translate()}
+        >
+          {options.map((opt) => (
+            <option key={opt.code} value={opt.code}>
+              {opt.name}
+            </option>
+          ))}
+        </select>
+        <div>
+          {/* <textarea onFocus={(e) => setInput(e.target.value)}>
           {data.Monuments[0].description}
         </textarea> */}
-      </div>
-      
-      <div >
-        <textarea
-          rows={6}
-          cols={103}
-          disabled
-          value={output}
-          id="txtFld"
-          placeholder="Please Select Language" 
-          className='text'
-        ></textarea>
-      </div>
-      <div className='choose'>
-      <div class="uiunit">
-        <label for="speakerMenu" className='choose'>Choose Voice: </label>
-      </div>
-        <select id="speakerMenu"></select>
-      </div> 
-      
-      <div class="uiunit_none">
-        <label for="rateFld">Speed: </label>
-        <input
-          type="number"
-          id="rateFld"
-          min="0.5"
-          max="2"
-          step="0.1"
-          value="0.8"
-        />
-      </div>
-      <div> 
-      
-
-        <button type="button" id="speakBtn">
-          Speak
-        </button>
-      </div> 
-      
-      <div id="temp"></div>
-      <div className="container">
-
-      <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        loop={true}
-        slidesPerView={'auto'}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 2.5,
-        }}
-        pagination={{ el: '.swiper-pagination', clickable: true }}
-        navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-          clickable: true,
-        }}
-        modules={[EffectCoverflow, Pagination, Navigation]}
-        className="swiper_container"
-      >
-        <SwiperSlide>
-          <img src={slide_image_1} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_2} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_3} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_4} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_5} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_6} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_7} alt="slide_image" />
-        </SwiperSlide>
-
-        <div className="slider-controler">
-          <div className="swiper-button-prev slider-arrow">
-            <ion-icon name="arrow-back-outline"></ion-icon>
-          </div>
-          <div className="swiper-button-next slider-arrow">
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-          </div>
-          <div className="swiper-pagination"></div>
         </div>
-      </Swiper>
-    </div>
-       
-      
+
+        <div>
+          <textarea
+            rows={6}
+            cols={103}
+            disabled
+            value={output}
+            id="txtFld"
+            placeholder="Please Select Language"
+            className="text"
+          ></textarea>
+        </div>
+        <div className="choose">
+          <div class="uiunit">
+            <label for="speakerMenu" className="choose">
+              Choose Voice:{' '}
+            </label>
+          </div>
+          <select id="speakerMenu"></select>
+        </div>
+
+        <div class="uiunit_none">
+          <label for="rateFld">Speed: </label>
+          <input
+            type="number"
+            id="rateFld"
+            min="0.5"
+            max="2"
+            step="0.1"
+            value="0.8"
+          />
+        </div>
+        <div>
+          <button type="button" id="speakBtn" class="button">
+          <span class="button__text">Speak</span>
+          <span class="button__icon">
+              <ion-icon name="volume-medium-outline"></ion-icon>
+          </span>
+          </button>
+        </div>
+
+        <div id="temp"></div>
+        <div className="container">
+          <Swiper
+            effect={'coverflow'}
+            grabCursor={true}
+            centeredSlides={true}
+            loop={true}
+            slidesPerView={'auto'}
+            coverflowEffect={{
+              rotate: 0,
+              stretch: 0,
+              depth: 100,
+              modifier: 2.5,
+            }}
+            pagination={{ el: '.swiper-pagination', clickable: true }}
+            navigation={{
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+              clickable: true,
+            }}
+            modules={[EffectCoverflow, Pagination, Navigation]}
+            className="swiper_container"
+          >
+            <SwiperSlide>
+              <img src={slide_image_1} alt="slide_image" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={slide_image_2} alt="slide_image" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={slide_image_3} alt="slide_image" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={slide_image_4} alt="slide_image" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={slide_image_5} alt="slide_image" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={slide_image_6} alt="slide_image" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={slide_image_7} alt="slide_image" />
+            </SwiperSlide>
+
+            <div className="slider-controler">
+              <div className="swiper-button-prev slider-arrow">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+              </div>
+              <div className="swiper-button-next slider-arrow">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
+              <div className="swiper-pagination"></div>
+            </div>
+          </Swiper>
+        </div>
       </center>
     </div>
   );

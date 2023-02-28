@@ -4,10 +4,11 @@ import axios from 'axios';
 import data from '../data.js';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+
+import "swiper/swiper.min.css";
+import "swiper/components/effect-coverflow/effect-coverflow.min.css";
+import "swiper/components/pagination/pagination.min.css";
+import "swiper/components/navigation/navigation.min.css";
 
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
@@ -79,7 +80,7 @@ function Monument2() {
           </option>
         ))}
       </select> */} 
-      <div> 
+      <div class="choose"> 
       Choose Language ({to}) :
       </div>
       <select
@@ -128,11 +129,12 @@ function Monument2() {
         />
       </div>
       <div> 
-      
-
-        <button type="button" id="speakBtn">
-          Speak
-        </button>
+      <button type="button" id="speakBtn" class="button">
+          <span class="button__text">Speak</span>
+          <span class="button__icon">
+              <ion-icon name="volume-medium-outline"></ion-icon>
+          </span>
+          </button>
       </div> 
       
       <div id="temp"></div>

@@ -64,7 +64,7 @@ function Monument5() {
           </option>
         ))}
       </select> */} 
-      <div> 
+      <div class="choose"> 
       Choose Language ({to}) :
       </div>
       <select
@@ -113,11 +113,12 @@ function Monument5() {
         />
       </div>
       <div> 
-      
-
-        <button type="button" id="speakBtn">
-          Speak
-        </button>
+      <button type="button" id="speakBtn" class="button">
+          <span class="button__text">Speak</span>
+          <span class="button__icon">
+              <ion-icon name="volume-medium-outline"></ion-icon>
+          </span>
+          </button>
       </div> 
       
       <div id="temp"></div>
