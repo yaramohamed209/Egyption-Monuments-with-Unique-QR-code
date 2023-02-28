@@ -3,12 +3,10 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import data from '../data.js';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
 import slide_image_1 from './assets/images2/Akh1.jpg';
