@@ -197,6 +197,8 @@ footer {
   float: left;
   width: 25%;
   padding: 20px;
+  /* transform: perspective(800px) rotateY(20deg);
+  transform-origin: center;*/
 }
 .A1,
 .A2,
@@ -206,6 +208,8 @@ footer {
   height: 200px;
   border-radius: 20px;
   border-radius: 50%;
+  /*border-style: solid;
+  border-color: #000000;*/ 
 }
 .col-lg-7 {
   display: flex;
