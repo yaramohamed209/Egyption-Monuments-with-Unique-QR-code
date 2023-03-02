@@ -200,6 +200,7 @@ footer {
   /* transform: perspective(800px) rotateY(20deg);
   transform-origin: center;*/
 }
+
 .A1,
 .A2,
 .A3 {
@@ -599,3 +600,9 @@ div.skiptranslate.goog-te-gadget {
 .goog-te-combo{
    height: 21px;
    } 
+   .VIpgJd-ZVi9od-l4eHX-hSRGPd {
+    display: none;
+   }
+   iframe{
+    display: none;
+   }
