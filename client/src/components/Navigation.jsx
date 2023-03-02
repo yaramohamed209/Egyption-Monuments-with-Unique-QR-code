@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+
 function Navigation() {
   return (
     <div className="navigation">
@@ -17,13 +18,11 @@ function Navigation() {
                   <span className="sr-only">(current)</span>
                 </NavLink>
               </li>
-             
               <li className="nav-item">
                 <NavLink className="nav-link" to="/events">
                   Events
                 </NavLink>
               </li>
-              
             </ul>
           </div>
         </div>
