@@ -44,6 +44,7 @@ function Home()
                     </div>   
             </div>
         </div>
+        <center>
         <div class="wrapper">
           <div className="box1">
             <p>
@@ -51,7 +52,8 @@ function Home()
               and memories.Go discover them !!
             </p>
           </div>
-        </div>
+        </div> 
+       
         <div class="row ">
           <div class="column">
             <label class="textOverImage" >
@@ -112,7 +114,8 @@ function Home()
   <h2>The Red Sea</h2>
 </label>
 </div>
-</div>
+</div> 
+</center>
 <div className= "images ">  
          <div  className= "image ">
             <img src="./images/t4.jpg"  className= "egypt-image "alt=""/> 
