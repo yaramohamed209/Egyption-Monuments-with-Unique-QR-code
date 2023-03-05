@@ -29,11 +29,8 @@ function Home()
       <div id="google_translate_element"></div>
       <div class="container">
         <div class="row align-items-center my-5">
-        
           <div class="col-lg-20"></div> 
-          
-          <h2 >WELCOME TO EGYPT</h2> 
-        
+          <h2 >WELCOME TO EGYPT</h2>
         <div class="slider-frame">
             <div class="slide-images">
                     <div class="img-container">
@@ -199,4 +196,4 @@ function Home()
     
   );
 }
-export default Home;
+export default Home;
