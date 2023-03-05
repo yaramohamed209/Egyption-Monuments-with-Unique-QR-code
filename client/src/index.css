@@ -150,6 +150,10 @@ footer {
   div.image {
     width: 20%;
   }
+  div.home {
+    width: 20%;
+  }
+
 }
 /*ipad screen*/
 @media screen and (max-width: 952px) {
@@ -186,6 +190,10 @@ footer {
   .goog-te-gadget-icon {
     display: none;
   }
+  div.home {
+    width: 80%;
+  }
+
 }
 .more {
   overflow: hidden;
