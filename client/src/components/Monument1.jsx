@@ -114,22 +114,38 @@ function Monuments() {
         </div>
         <div>
           <button type="button" id="speakBtn" class="button">
-          <span class="button__text">Speak</span>
-          <span class="button__icon">
+            <span class="button__text">Speak</span>
+            <span class="button__icon">
               <ion-icon name="volume-medium-outline"></ion-icon>
-          </span>
+            </span>
           </button>
         </div>
 
         <div id="temp"></div>
-        <div className='more'>
-        <img className="A1" src="/images/Akhnatoon/a2.jpg" alt="" />
-        <img className="A1" src="/images/Akhnatoon/a3.jpg" alt="" />
-        <img className="A1" src="/images/Akhnatoon/a4.jpg" alt="" />
-        <img className="A1" src="/images/Akhnatoon/a5.jpg" alt="" />
+        <div class="more">
+          <div class="card">
+            <div class="content">
+              <img class="A1" src="/images/kaaba/k2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <img class="A1" src="/images/kaaba/k3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <img class="A1" src="/images/kaaba/k4.jpg" alt="" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <img class="A1" src="/images/kaaba/k5.jpg" alt="" />
+            </div>
+          </div>
+        </div>
         <div class="uiunit">
           <select id="languageMenu"></select>
-        </div>
         </div>
       </center>
     </div>

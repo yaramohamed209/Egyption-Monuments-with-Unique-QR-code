@@ -6,10 +6,10 @@ import data from '../data.js';
 function Monuments() {
   const [options, setOptions] = useState([]);
   const [to, setTo] = useState('en');
-  const [from, setFrom] = useState('en');
+  const [from] = useState('en');
   const input = data.Monuments[0].description;
-  //const [setInput] = useState('');
   const [output, setOutput] = useState('');
+  // function that translate the data from the text area
   const translate = () => {
     // curl -X POST "https://libretranslate.de/translate" -H  "accept: application/json" -H  "Content-Type: application/x-www-form-urlencoded" -d "q=hello&source=en&target=es&api_key=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
     const params = new URLSearchParams();
@@ -17,7 +17,7 @@ function Monuments() {
     params.append('source', from);
     params.append('target', to);
     params.append('api_key', 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx');
-
+    // post method to send the data to the database with parameters
     axios
       .post(
         'https://libretranslate.de/translate',
@@ -30,23 +30,29 @@ function Monuments() {
           },
         }
       )
+      // response and return the translated data
       .then((res) => {
         setOutput(res.data.translatedText);
       });
   };
-
+  // React hook to fetch data from APIs
   useEffect(() => {
+    // get method to send http request
     axios
       .get('https://libretranslate.de/languages', {
         headers: { accept: 'application/json' },
       })
+      // then method to response to the request
       .then((res) => {
+        // res.data it has all language options
         setOptions(res.data);
       });
   }, []);
+  // [] to fetch the data once
 
   return (
     <div className="app">
+      {/* div for the first image */}
       <div class="col-lg-7">
         <img
           class="img-fluid rounded mb-4 mb-lg-0"
@@ -54,84 +60,92 @@ function Monuments() {
           alt=""
         />
       </div>
+      {/* center tag to put content of the page in the center */}
       <center>
-      <div id="root"></div>
-      {/* from ({from}):
-      <select onChange={(e) => setFrom(e.target.value)}>
-        {options.map((opt) => (
-          <option key={opt.code} value={opt.code}>
-            {opt.name}
-          </option>
-        ))}
-      </select> */} 
-      <div class="choose"> 
-      Choose Language ({to}) :
-      </div>
-      <select
-        onChange={(e) => setTo(e.target.value)}
-        onClick={(e) => translate()}
-      >
-        {options.map((opt) => (
-          <option key={opt.code} value={opt.code}>
-            {opt.name}
-          </option>
-        ))}
-      </select>
-      <div>
-        {/* <textarea onFocus={(e) => setInput(e.target.value)}>
-          {data.Monuments[0].description}
-        </textarea> */}
-      </div>
-      
-      <div >
-        <textarea
-          rows={6}
-          cols={103}
-          disabled
-          value={output}
-          id="txtFld"
-          placeholder="Please Select Language" 
-          className='text'
-        ></textarea>
-      </div>
-      <div className='choose'>
-      <div class="uiunit">
-        <label for="speakerMenu" className='choose'>Choose Voice: </label>
-      </div>
-        <select id="speakerMenu"></select>
-      </div> 
-      
-      <div class="uiunit_none">
-        <label for="rateFld">Speed: </label>
-        <input
-          type="number"
-          id="rateFld"
-          min="0.5"
-          max="2"
-          step="0.1"
-          value="0.8"
-        />
-      </div>
-      <div> 
-      <button type="button" id="speakBtn" class="button">
-          <span class="button__text">Speak</span>
-          <span class="button__icon">
-              <ion-icon name="volume-medium-outline"></ion-icon>
-          </span>
-          </button>
-      </div> 
-      
-      <div id="temp"></div>
-      <div class="more">
-        <img class="A1" src="/images/Akhnatoon/a2.jpg" alt="" />
-        <img class="A1" src="/images/Akhnatoon/a3.jpg" alt="" />
-        <img class="A1" src="/images/Akhnatoon/a4.jpg" alt="" />
-        <img class="A1" src="/images/Akhnatoon/a5.jpg" alt="" />
+        <div id="root"></div>
 
+        <div class="choose">Choose Language ({to}) :</div>
+        <select
+          onChange={(e) => setTo(e.target.value)}
+          onClick={(e) => translate()}
+        >
+          {/* map function to map in the array (res.data)*/}
+          {options.map((opt) => (
+            <option key={opt.code} value={opt.code}>
+              {opt.name}
+            </option>
+          ))}
+        </select>
+        {/* div for the teaxt area to show the data of the monument on it */}
+        <div>
+          <textarea
+            rows={6}
+            cols={103}
+            disabled
+            value={output}
+            id="txtFld"
+            placeholder="Please Select Language"
+            className="text"
+          ></textarea>
+        </div>
+        {/* div for choose voice lable */}
+        <div className="choose">
+          <div class="uiunit">
+            <label for="speakerMenu" className="choose">
+              Choose Voice:{' '}
+            </label>
+          </div>
+          <select id="speakerMenu"></select>
+        </div>
+
+        <div class="uiunit_none">
+          <label for="rateFld">Speed: </label>
+          <input
+            type="number"
+            id="rateFld"
+            min="0.5"
+            max="2"
+            step="0.1"
+            value="0.8"
+          />
+        </div>
+
+        {/* div for speak button */}
+        <div>
+          <button type="button" id="speakBtn" class="button">
+            <span class="button__text">Speak</span>
+            <span class="button__icon">
+              <ion-icon name="volume-medium-outline"></ion-icon>
+            </span>
+          </button>
+        </div>
+
+        <div id="temp"></div>
+        <div class="more">
+          <div class="card">
+            <div class="content">
+              <img class="A1" src="/images/Akhnatoon/a2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <img class="A1" src="/images/Akhnatoon/a3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <img class="A1" src="/images/Akhnatoon/a4.jpg" alt="" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <img class="A1" src="/images/Akhnatoon/a5.jpg" alt="" />
+            </div>
+          </div>
+        </div>
         <div class="uiunit">
           <select id="languageMenu"></select>
         </div>
-      </div>
       </center>
     </div>
   );
@@ -144,6 +158,7 @@ let initialSetup = true;
 const defaultBlurb = data.Monuments[0].description;
 
 function init() {
+  // qs---> document.quaryselector
   speakBtn = qs('#speakBtn');
   txtFld = qs('#txtFld');
   speakerMenu = qs('#speakerMenu');

@@ -55,82 +55,98 @@ function Monument6() {
         />
       </div>
       <center>
-      <div id="root"></div>
-      {/* from ({from}):
+        <div id="root"></div>
+        {/* from ({from}):
       <select onChange={(e) => setFrom(e.target.value)}>
         {options.map((opt) => (
           <option key={opt.code} value={opt.code}>
             {opt.name}
           </option>
         ))}
-      </select> */} 
-      <div class="choose"> 
-      Choose Language ({to}) :
-      </div>
-      <select
-        onChange={(e) => setTo(e.target.value)}
-        onClick={(e) => translate()}
-      >
-        {options.map((opt) => (
-          <option key={opt.code} value={opt.code}>
-            {opt.name}
-          </option>
-        ))}
-      </select>
-      <div>
-        {/* <textarea onFocus={(e) => setInput(e.target.value)}>
+      </select> */}
+        <div class="choose">Choose Language ({to}) :</div>
+        <select
+          onChange={(e) => setTo(e.target.value)}
+          onClick={(e) => translate()}
+        >
+          {options.map((opt) => (
+            <option key={opt.code} value={opt.code}>
+              {opt.name}
+            </option>
+          ))}
+        </select>
+        <div>
+          {/* <textarea onFocus={(e) => setInput(e.target.value)}>
           {data.Monuments[0].description}
         </textarea> */}
-      </div>
-      
-      <div >
-        <textarea
-          rows={6}
-          cols={103}
-          disabled
-          value={output}
-          id="txtFld"
-          placeholder="Please Select Language" 
-          className='text'
-        ></textarea>
-      </div>
-      <div className='choose'>
-      <div class="uiunit">
-        <label for="speakerMenu" className='choose'>Choose Voice: </label>
-      </div>
-        <select id="speakerMenu"></select>
-      </div> 
-      
-      <div class="uiunit_none">
-        <label for="rateFld">Speed: </label>
-        <input
-          type="number"
-          id="rateFld"
-          min="0.5"
-          max="2"
-          step="0.1"
-          value="0.8"
-        />
-      </div>
-      <div> 
-      <button type="button" id="speakBtn" class="button">
-          <span class="button__text">Speak</span>
-          <span class="button__icon">
+        </div>
+
+        <div>
+          <textarea
+            rows={6}
+            cols={103}
+            disabled
+            value={output}
+            id="txtFld"
+            placeholder="Please Select Language"
+            className="text"
+          ></textarea>
+        </div>
+        <div className="choose">
+          <div class="uiunit">
+            <label for="speakerMenu" className="choose">
+              Choose Voice:{' '}
+            </label>
+          </div>
+          <select id="speakerMenu"></select>
+        </div>
+
+        <div class="uiunit_none">
+          <label for="rateFld">Speed: </label>
+          <input
+            type="number"
+            id="rateFld"
+            min="0.5"
+            max="2"
+            step="0.1"
+            value="0.8"
+          />
+        </div>
+        <div>
+          <button type="button" id="speakBtn" class="button">
+            <span class="button__text">Speak</span>
+            <span class="button__icon">
               <ion-icon name="volume-medium-outline"></ion-icon>
-          </span>
+            </span>
           </button>
-      </div> 
-      
-      <div id="temp"></div>
-      <div class="more">
-        <img class="A1" src="/images/Chair/CH2.jpg" alt="" />
-        <img class="A1" src="/images/Chair/CH3.jpg" alt="" />
-        <img class="A1" src="/images/Chair/CH4.jpg" alt="" />
-        <img class="A1" src="/images/Chair/CH5.jpg" alt="" />
-      </div>
-      <div class="uiunit">
-        <select id="languageMenu"></select>
-      </div>
+        </div>
+
+        <div id="temp"></div>
+        <div class="more">
+          <div class="card">
+            <div class="content">
+              <img class="A1" src="/images/Chair/CH2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <img class="A1" src="/images/Chair/CH3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <img class="A1" src="/images/Chair/CH4.jpg" alt="" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <img class="A1" src="/images/Chair/CH5.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="uiunit">
+          <select id="languageMenu"></select>
+        </div>
       </center>
     </div>
   );
