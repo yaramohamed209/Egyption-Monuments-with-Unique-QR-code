@@ -149,7 +149,8 @@ footer {
   }
   div.image {
     width: 20%;
-  }
+  } 
+  
 }
 /*ipad screen*/
 @media screen and (max-width: 952px) {
@@ -175,6 +176,12 @@ footer {
   }
   div.image {
     width: 80%;
+  }
+  .box1{
+    font-size: 37px;
+  }
+  .egypt1{
+    width: 100;
   }
   .goog-te-combo {
     height: 21px;
@@ -232,7 +239,7 @@ h2 {
   padding-left: 40px;
   padding-right: 50px;
   margin-top: 50px;
-  margin-left: 350px;
+  margin-left: 0px;
 }
 
 .slider-frame {
@@ -353,6 +360,11 @@ h1 {
   font-size: 60px;
   font-family: 'Karla', sans-serif;
   font-weight: lighter;
+} 
+.footer{
+ 
+  width: 100%;
+ /*position: relative;px;*/
 }
 
 .slider-frame {
@@ -363,103 +375,9 @@ h1 {
   margin-top: 20px;
 }
 
-/*---------- SLIDE ANIMATION --------------*/
 
-@keyframes slide_animation {
-  0% {
-    left: 0px;
-  }
-  10% {
-    left: 0px;
-  }
-  20% {
-    left: 1200px;
-  }
-  30% {
-    left: 1200px;
-  }
-  40% {
-    left: 2400px;
-  }
-  50% {
-    left: 2400px;
-  }
-  60% {
-    left: 1200px;
-  }
-  70% {
-    left: 1200px;
-  }
-  80% {
-    left: 0px;
-  }
-  90% {
-    left: 0px;
-  }
-  100% {
-    left: 0px;
-  }
-}
 
-@-webkit-keyframes slide_animation {
-  0% {
-    left: 0px;
-  }
-  10% {
-    left: 0px;
-  }
-  20% {
-    left: 1200px;
-  }
-  30% {
-    left: 1200px;
-  }
-  40% {
-    left: 2400px;
-  }
-  50% {
-    left: 2400px;
-  }
-  60% {
-    left: 1200px;
-  }
-  70% {
-    left: 1200px;
-  }
-  80% {
-    left: 0px;
-  }
-  90% {
-    left: 0px;
-  }
-  100% {
-    left: 0px;
-  }
-}
 
-.slide-images {
-  width: 3600px;
-  height: 800px;
-  margin: 0 0 0 -2400px;
-  position: relative;
-  -webkit-animation-name: slide_animation;
-  animation-name: slide_animation;
-  -webkit-animation-duration: 20s;
-  animation-duration: 20s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-.img-container {
-  height: 800px;
-  width: 1200px;
-  position: relative;
-  float: left;
-}
 
 .textOverImage {
   width: 60%;
@@ -565,6 +483,7 @@ h1 {
 /* images buttom the .monuments pages */
 .A1 {
   width: 200px;
+  height: 300px;
 }
 .more {
   position: relative;
@@ -598,7 +517,7 @@ h1 {
   transform-origin: center;
   transform: perspective(800px) rotateY(-15deg);
   transition: 0.5s;
-  -webkit-box-reflect: below 1px
+  -webkit-box-reflect: below 0.01px
     linear-gradient(transparent, transparent, #000f00);
 }
 

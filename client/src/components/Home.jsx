@@ -1,7 +1,6 @@
 import React from "react";
 function Home()
  {
-
   React.useEffect(() => { 
     var addScript = document.createElement('script'); 
     addScript.setAttribute( 
@@ -24,10 +23,9 @@ function Home()
   };
 
   return (
-
+  
     <div className="home">
-      <div id="google_translate_element"></div> 
-      
+      <div id="google_translate_element"></div>
       <div class="container">
         <div class="row align-items-center my-5">
           <div class="col-lg-20"></div> 
@@ -45,7 +43,6 @@ function Home()
                     </div>   
             </div>
         </div>
-        <center>
         <div class="wrapper">
           <div className="box1">
             <p>
@@ -53,70 +50,12 @@ function Home()
               and memories.Go discover them !!
             </p>
           </div>
-        </div> 
+        </div>
        
-        <div class="row ">
-          <div class="column">
-            <label class="textOverImage" >
-              <input type="checkbox"/>
-                 <img src="images/Highlights/Nile.jpg" className= "egypt "alt=""/> 
-                   <h2>Egyptian Nile</h2>
-            </label>
-          </div>
-         <div class="column">
-           <label class="textOverImage" >
-              <input type="checkbox"/>
-                  <img src="images/Highlights/pyramids.jpg"  className= "egypt "alt=""/> 
-                    <h2>Giza Pyramids</h2>
-            </label>
-          </div>
-          <div class="column">
-            <label class="textOverImage" >
-              <input type="checkbox"/>
-                <img src="images/Highlights/abusimbel.jpg"  className= "egypt"alt=""/> 
-                    <h2>Abu Simbel Temples</h2>
-            </label>
-          </div>
-          <div class="column">
-            <label class="textOverImage" >
-              <input type="checkbox"/>
-                <img src="images/Highlights/islamic.jpg"  className= "egypt "alt=""/> 
-                    <h2>Museum of Islamic Art</h2>
-            </label>
-          </div>
+        
           </div>
 
-<div class="row ">
-<div class="column">
-<label class="textOverImage" >
-  <input type="checkbox"/>
-  <img src="images/Highlights/egyptianmuseum.jpg"  className= "egypt"alt=""/> 
-  <h2>Egyptian Museum</h2>
-</label>
-</div>
-<div class="column">
-<label class="textOverImage" >
-  <input type="checkbox"/>
-  <img src="images/Highlights/saintcatren.jpg"  className= "egypt"alt=""/> 
-  <h2>Saint Catherine Monastery </h2>
-</label>
-</div>
-<div class="column">
-<label class="textOverImage" >
-  <input type="checkbox"/>
-  <img src="images/Highlights/siwa.jpg"  className= "egypt"alt=""/> 
-  <h2>Siwa Oasis</h2>
-</label>
-</div>
-<div class="column">
-<label class="textOverImage" >
-  <input type="checkbox"/>
-  <img src="images/Highlights/redsea.jpg"  className= "egypt"alt=""/> 
-  <h2>The Red Sea</h2>
-</label>
-</div>
-</div> 
-</center>
+
 <div className= "images ">  
          <div  className= "image ">
             <img src="./images/t4.jpg"  className= "egypt-image "alt=""/> 
@@ -189,12 +128,11 @@ function Home()
              </div>
          </div>          
      </div>
-
-          </div>
-
-        </div>
       </div>
+      </div>
+  
+      
     
   );
 }
-export default Home;
+export default Home;
