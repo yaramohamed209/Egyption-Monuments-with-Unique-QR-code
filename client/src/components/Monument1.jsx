@@ -50,7 +50,7 @@ function Monuments() {
       <div class="col-lg-7">
         <img
           class="img-fluid rounded mb-4 mb-lg-0"
-          src={data.Monuments[0].image}
+          src={data.Monuments[1].image}
           alt=""
         />
       </div>
@@ -92,9 +92,9 @@ function Monuments() {
             className="text"
           ></textarea>
         </div>
-        <div className="choose">
+        <div className="choose1">
           <div class="uiunit">
-            <label for="speakerMenu" className="choose">
+            <label for="speakerMenu" className="choose1">
               Choose Voice:{' '}
             </label>
           </div>
@@ -125,22 +125,22 @@ function Monuments() {
         <div class="more">
           <div class="card">
             <div class="content">
-              <img class="A1" src="/images/kaaba/k2.jpg" alt="" />
+              <img className="A1" src="/images/kaaba/k2.jpg" alt="" />
             </div>
           </div>
           <div class="card">
             <div class="content">
-              <img class="A1" src="/images/kaaba/k3.jpg" alt="" />
+              <img className="A1" src="/images/kaaba/k3.jpg" alt="" />
             </div>
           </div>
           <div class="card">
             <div class="content">
-              <img class="A1" src="/images/kaaba/k4.jpg" alt="" />
+              <img className="A1"src="/images/kaaba/k4.jpg" alt="" />
             </div>
           </div>
           <div class="card">
             <div class="content">
-              <img class="A1" src="/images/kaaba/k5.jpg" alt="" />
+              <img className="A1"src="/images/kaaba/k5.jpg" alt="" />
             </div>
           </div>
         </div>

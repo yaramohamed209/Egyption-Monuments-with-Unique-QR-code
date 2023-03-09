@@ -29,33 +29,105 @@ function Home()
       <div class="container">
         <div class="row align-items-center my-5">
           <div class="col-lg-20"></div> 
+          <center>
+            <strong>
           <h2 >WELCOME TO EGYPT</h2>
+          </strong>
+          </center>
+          
         <div class="slider-frame">
             <div class="slide-images">
                     <div class="img-container">
-                        <img src="images/Highlights/national.jpg"alt=""/>
+                        <img src="images/Highlights/national.jpg"alt=""width="370" height="auto"/>
                     </div>
                     <div class="img-container">
-                        <img src="images/Highlights/cariomuseum.jpg"alt=""/>
+                        <img src="images/Highlights/cariomuseum.jpg"alt=""width="370" height="auto"/>
                     </div>
                     <div class="img-container">
-                        <img src="images/Highlights/abdeenpalace.jpg"alt=""/>
+                        <img src="images/Highlights/abdeenpalace.jpg"alt=""width="370" height="auto"/>
                     </div>   
             </div>
         </div>
+        <center>
         <div class="wrapper">
           <div className="box1">
+            <strong>
             <p>
              Egypt is full of dreams, mysteries<br></br>
-              and memories.Go discover them !!
+                and memories.Go discover them !!
             </p>
+            </strong>
           </div>
         </div>
-       
+        </center>       
         
           </div>
+<center>
+<div id="root"></div>
+        <div class="wrapper">
+        <div class="row ">
+          <div class="column">
+            <label class="textOverImage" >
+              <input type="checkbox"/>
+                 <img src="images/Highlights/Nile.jpg" className= "egypt "alt=""/> 
+                   <h3>Egyptian Nile</h3>
+            </label>
+          </div>
+         <div class="column">
+           <label class="textOverImage" >
+              <input type="checkbox"/>
+                  <img src="images/Highlights/pyramids.jpg"  className= "egypt "alt=""/> 
+                    <h3>Giza Pyramids</h3>
+            </label>
+          </div>
+          <div class="column">
+            <label class="textOverImage" >
+              <input type="checkbox"/>
+                <img src="images/Highlights/abusimbel.jpg"  className= "egypt"alt=""/> 
+                    <h3>Abu Simbel Temples</h3>
+            </label>
+          </div>
+          <div class="column">
+            <label class="textOverImage" >
+              <input type="checkbox"/>
+                <img src="images/Highlights/islamic.jpg"  className= "egypt "alt=""/> 
+                    <h3>Museum of Islamic Art</h3>
+            </label>
+          </div>
+          </div>
+          </div>
 
-
+<div class="row ">
+<div class="column">
+<label class="textOverImage" >
+  <input type="checkbox"/>
+  <img src="images/Highlights/egyptianmuseum.jpg"  className= "egypt"alt=""/> 
+  <h3>Egyptian Museum</h3>
+</label>
+</div>
+<div class="column">
+<label class="textOverImage" >
+  <input type="checkbox"/>
+  <img src="images/Highlights/saintcatren.jpg"  className= "egypt"alt=""/> 
+  <h3>Saint Catherine Monastery </h3>
+</label>
+</div>
+<div class="column">
+<label class="textOverImage" >
+  <input type="checkbox"/>
+  <img src="images/Highlights/siwa.jpg"  className= "egypt"alt=""/> 
+  <h3>Siwa Oasis</h3>
+</label>
+</div>
+<div class="column">
+<label class="textOverImage" >
+  <input type="checkbox"/>
+  <img src="images/Highlights/redsea.jpg"  className= "egypt"alt=""/> 
+  <h3>The Red Sea</h3>
+</label>
+</div>
+</div>
+</center>
 <div className= "images ">  
          <div  className= "image ">
             <img src="./images/t4.jpg"  className= "egypt-image "alt=""/> 

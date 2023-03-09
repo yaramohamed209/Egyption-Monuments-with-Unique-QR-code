@@ -20,7 +20,7 @@ body {
 }
 
 .box1 {
-  background-color: #2e2b2b;
+  background-color: #745e40 ;
   color: #fff;
   width: fit-content;
   font-size: 50px;
@@ -121,6 +121,7 @@ nav {
 }
 header,
 footer {
+  
   position: sticky;
 
   background-color: #be9d44a6;
@@ -141,6 +142,7 @@ main {
 }
 footer {
   bottom: 0;
+  width: 100%;
 }
 /*mediam screen*/
 @media screen and (max-width: 1200px) {
@@ -149,8 +151,7 @@ footer {
   }
   div.image {
     width: 20%;
-  } 
-  
+  }
 }
 /*ipad screen*/
 @media screen and (max-width: 952px) {
@@ -177,12 +178,6 @@ footer {
   div.image {
     width: 80%;
   }
-  .box1{
-    font-size: 37px;
-  }
-  .egypt1{
-    width: 100;
-  }
   .goog-te-combo {
     height: 21px;
     position: absolute;
@@ -192,6 +187,13 @@ footer {
   }
   .goog-te-gadget-icon {
     display: none;
+  } 
+  .box1{
+    font-size: 37px;
+  } 
+  .egypt
+  {
+    width: 100%;
   }
 }
 
@@ -230,7 +232,7 @@ body {
 }
 
 h2 {
-  background-color: #2e2b2b;
+  background-color: #745e40;
   color: #fff;
   width: fit-content;
   font-size: 50px;
@@ -239,12 +241,64 @@ h2 {
   padding-left: 40px;
   padding-right: 50px;
   margin-top: 50px;
-  margin-left: 0px;
+  margin-left: 0px;
+} 
+h3{
+  color: #fff;
+  width: fit-content;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 50px;
+  margin-top: 50px;
+  margin-left: 1px;
+}
+
+
+
+.slide-images {
+  width: 3600px;
+  height: 800px;
+  margin: 0 0 0 -2400px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  animation-name: slide_animation;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.img-container {
+  height: 800px;
+  width: 1100px;
+  position: relative;
+  float: left;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: floralwhite;
+}
+
+h1 {
+  margin-top: 50px;
+  margin-left: 300px;
+  background: fixed;
+  background-color: #ddd;
+  font-size: 60px;
+  font-family: 'Karla', sans-serif;
+  font-weight: lighter;
 }
 
 .slider-frame {
   overflow: hidden;
-  height: 800px;
+  height: 300px;
   width: 1200px;
   margin-left: 10px;
   margin-top: 20px;
@@ -323,60 +377,6 @@ h2 {
   }
 }
 
-.slide-images {
-  width: 3600px;
-  height: 800px;
-  margin: 0 0 0 -2400px;
-  position: relative;
-  -webkit-animation-name: slide_animation;
-  animation-name: slide_animation;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-}
-
-.img-container {
-  height: 800px;
-  width: 1100px;
-  position: relative;
-  float: left;
-}
-body {
-  padding: 0;
-  margin: 0;
-  background-color: floralwhite;
-}
-
-h1 {
-  margin-top: 50px;
-  margin-left: 300px;
-  background: fixed;
-  background-color: #ddd;
-  font-size: 60px;
-  font-family: 'Karla', sans-serif;
-  font-weight: lighter;
-} 
-.footer{
- 
-  width: 100%;
- /*position: relative;px;*/
-}
-
-.slider-frame {
-  overflow: hidden;
-  height: 800px;
-  width: 1200px;
-  margin-left: 20px;
-  margin-top: 20px;
-}
-
-
-
 
 
 .textOverImage {
@@ -389,6 +389,7 @@ h1 {
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  align-items: center;
 }
 
 .textOverImage > input {
@@ -396,7 +397,7 @@ h1 {
 }
 
 .textOverImage > div,
-.textOverImage > h2 {
+.textOverImage > h3 {
   position: absolute;
   background-color: rgba(85, 75, 75, 0.8);
   bottom: 20px;
@@ -406,21 +407,21 @@ h1 {
   padding: 8px;
   overflow: hidden;
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
-.textOverImage:hover > h2,
-.textOverImage > input:checked + h2 + div {
+.textOverImage:hover > h3,
+.textOverImage > input:checked + h3 + div {
   bottom: 4px;
   opacity: 1;
 }
 
-.textOverImage > input:checked + h2 {
+.textOverImage > input:checked + h3 {
   bottom: -20px;
   opacity: 0;
 }
 
-.textOverImage > h2 {
+.textOverImage > h3 {
   margin: 0;
 }
 * {
@@ -545,5 +546,3 @@ iframe {
 #languageMenu {
   display: none;
 }
-
-/* ---------------------------------------- */

@@ -16,7 +16,7 @@ import {
   Monument7,
   Monument5,
   Events,
-  Panorama
+  
 } from "./components";
 
 ReactDOM.render(
@@ -32,9 +32,7 @@ ReactDOM.render(
       <Route path="/monument5" element={<Monument5 />} />
       <Route path="/monument6" element={<Monument6 />} />
       <Route path="/monument7" element={<Monument7 />} />
-      <Route path="/Panorama" element={<Panorama/>}/>
-      <Route path="/events" element={<Events />} />
-      
+      <Route path="/events" element={<Events />} />  
     </Routes>
     <Footer />
   </Router>,
