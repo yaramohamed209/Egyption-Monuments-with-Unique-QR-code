@@ -21,7 +21,7 @@ const data = {
     {
       name: 'Fourth Monument',
       image: '/images/Music/M1.jpg',
-      description: 'Details of Fourth monument',
+      description: 'Ostraca (a piece of stone or pottery)Music concert depicted on a stone panelIt is used as a preparatory drawing before the implementation of drawings on the walls of tombs and temples. This piece depicts a banquet and the accompanying musical band for implementation in one of the tombs.(Modern State - Nineteenth Dynasty 1295-1187 - Luxor - Limestone)',
     },
     {
       name: 'Fifth Monument',
