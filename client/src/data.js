@@ -26,7 +26,7 @@ const data = {
     {
       name: 'Fifth Monument',
       image: '/images/Cosmatics/C1.jpg',
-      description: 'Details of Fourth monument',
+      description: 'Pharaonic women made all the adornments they needed. The combs were made to style her hair, and they are of two types, one of which is simple, with one row of teeth, and the other: with two rows. It was usually made of wood or ivory.Mirrors were among the accessories of women in ancient Egypt.Where her face was reflected on her metal sheet; To look at how to beautify, and their Indian kitten.Egyptian women made perfumes, used them differently, and knew how to extract them themselves to make their own distinctive perfume. He planted aromatic plants and their flowers in the garden of her house.',
     },
     {
       name: 'six Monument',
