@@ -57,6 +57,9 @@ a:hover {
 .egypt-image {
   width: 100%;
 }
+.egypt{
+  width: 100%;
+}
 .monuments {
   display: flex;
   flex-wrap: wrap;
@@ -211,8 +214,8 @@ h3{
   position: relative;
   -webkit-animation-name: slide_animation;
   animation-name: slide_animation;
-  -webkit-animation-duration: 5s;
-  animation-duration: 10s;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
@@ -223,7 +226,7 @@ h3{
 
 .img-container {
   height: 800px;
-  width: 1100px;
+  width: 1200px;
   position: relative;
   float: left;
 }
@@ -250,7 +253,10 @@ h1 {
   margin-left: 10px;
   margin-top: 20px;
 }
+.slider
+{
 
+}
 /*---------- SLIDE ANIMATION --------------*/
 
 @keyframes slide_animation {

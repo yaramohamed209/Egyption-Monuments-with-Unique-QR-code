@@ -16,17 +16,17 @@ const data = {
       name: 'Third Monument',
       image: '/images/Aagala/g1.jpg',
       description: 
-      'The chariot is an Egyptian weapon that was invented and developed by the ancient Egyptians and became part of the components of the Egyptian civilization, and a symbol of Egypt throughout the ages. It is the oldest armored weapon or armored vehicles used as weapons in wars. Military superiority, only at first, is due to chariots. Then the Egyptians began to manufacture war wheels, and make major modifications to them after the establishment of the Eighteenth Dynasty, led by Saqnen Ra, and after him Kamos, his son, then his brother Ahmose, and they continued fighting until the Hyksos were expelled from Egypt.Wheels were mentioned for the first time on the Kamose obelisk under the name (Net Hatari), meaning (Wheel Weapon).Then the wheels were used after that by the Egyptians a lot, and they appear in the paintings of Thutmose I, Thutmose III, and Ramses II, when new titles appeared, such as the head of the stable and the fighter of the wheel.',
+      'It is the oldest armored weapon or armored vehicles used as weapons in wars. Military superiority, only at first, is due to chariots. Then the Egyptians began to manufacture war wheels, and make major modifications to them after the establishment of the Eighteenth Dynasty, led by Saqnen Ra, and after him Kamos, his son, then his brother Ahmose, and they continued fighting until the Hyksos were expelled from Egypt.Wheels were mentioned for the first time on the Kamose obelisk under the name (Net Hatari), meaning (Wheel Weapon).Then the wheels were used after that by the Egyptians a lot, and they appear in the paintings of Thutmose I, Thutmose III, and Ramses II, when new titles appeared, such as the head of the stable and the fighter of the wheel.',
     },
     {
       name: 'Fourth Monument',
       image: '/images/Music/M1.jpg',
-      description: 'Ostraca (a piece of stone or pottery)Music concert depicted on a stone panelIt is used as a preparatory drawing before the implementation of drawings on the walls of tombs and temples. This piece depicts a banquet and the accompanying musical band for implementation in one of the tombs.(Modern State - Nineteenth Dynasty 1295-1187 - Luxor - Limestone)',
+      description: 'Orchestra (a piece of stone or pottery) Music concert depicted on a stone panel It is used as a preparatory drawing before the implementation of drawings on the walls of tombs and temples. This piece depicts a banquet and the accompanying musical band for implementation in one of the tombs.(Modern State - Nineteenth Dynasty 1295-1187 - Luxor - Limestone)',
     },
     {
       name: 'Fifth Monument',
       image: '/images/Cosmatics/C1.jpg',
-      description: 'Pharaonic women made all the adornments they needed. The combs were made to style her hair, and they are of two types, one of which is simple, with one row of teeth, and the other: with two rows. It was usually made of wood or ivory.Mirrors were among the accessories of women in ancient Egypt.Where her face was reflected on her metal sheet; To look at how to beautify, and their Indian kitten.Egyptian women made perfumes, used them differently, and knew how to extract them themselves to make their own distinctive perfume. He planted aromatic plants and their flowers in the garden of her house.',
+      description: 'Pharaonic women made all the adornments they needed. The combs used to style her hair, and they are of two types, one of which is simple, with one row of teeth, and the other: with two rows. It was usually made of wood or ivory.Mirrors were among the accessories of women in ancient Egypt.Where her face was reflected on her metal sheet; To look at how to beautify, and their Indian kitten.Egyptian women made perfumes, used them differently, and knew how to extract them themselves to make their own distinctive perfume. He planted aromatic plants and their flowers in the garden of her house.',
     },
     {
       name: 'six Monument',

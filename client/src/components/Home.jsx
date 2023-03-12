@@ -38,13 +38,13 @@ function Home()
         <div class="slider-frame">
             <div class="slide-images">
                     <div class="img-container">
-                        <img src="images/Highlights/national.jpg"alt=""width="370" height="auto"/>
+                        <img classname="slider" src="images/Highlights/national.jpg"alt=""width="370" height="auto"/>
                     </div>
                     <div class="img-container">
-                        <img src="images/Highlights/cariomuseum.jpg"alt=""width="370" height="auto"/>
+                        <img classname="slider" src="images/Highlights/cariomuseum.jpg"alt=""width="370" height="auto"/>
                     </div>
                     <div class="img-container">
-                        <img src="images/Highlights/abdeenpalace.jpg"alt=""width="370" height="auto"/>
+                        <img classname="slider" src="images/Highlights/abdeenpalace.jpg"alt=""width="370" height="auto"/>
                     </div>   
             </div>
         </div>
