@@ -2,7 +2,8 @@ import express from 'express';
 import  Path from 'path'
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import seedRouter from './routes/seedRoutes.js';
+import seedRouter from './routes/seedRoutes.js'; 
+import preventSleep from './preventSleep.cjs'
 import monumentRouter from './routes/monumentRoutes.js';
 dotenv.config();
 
@@ -25,7 +26,11 @@ app.use(express.static(Path.join(__dirname, '../client/build')));
 app.get('*', (req, res) =>
   res.sendFile(Path.join(__dirname, '../client/build/index.html'))
 );
-
+const PORT = 6000; 
+ const server = app.listen(PORT ,()=> {
+  console.log(`listening on port ${PORT}`);
+  preventSleep.preventSleep();
+ });
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
